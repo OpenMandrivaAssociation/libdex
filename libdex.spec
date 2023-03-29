@@ -70,6 +70,3 @@ libdex.
 
 %files devel-docs
 %doc %{_docdir}/libdex-1/
-
-%changelog
-%autochangelog
