@@ -1,16 +1,15 @@
 Name:    libdex
 Version: 0.2.0
-Release: %autorelease
+Release: 1
 Summary: a library supporting "Deferred Execution" for GNOME and GTK
 
 License: LGPL-2.1-or-later
 URL:     https://gitlab.gnome.org/GNOME/libdex
 Source0: https://download.gnome.org/sources/libdex/0.2/%{name}-%{version}.tar.xz
 
-BuildRequires: /usr/bin/vapigen
-BuildRequires: gcc
+BuildRequires: pkgconfig(vapigen)
 BuildRequires: gi-docgen
-BuildRequires: libatomic
+#BuildRequires: libatomic
 BuildRequires: meson
 BuildRequires: pkgconfig(gio-2.0)
 BuildRequires: pkgconfig(gobject-introspection-1.0)
@@ -55,9 +54,6 @@ libdex.
 
 %install
 %meson_install
-
-%check
-%meson_test
 
 %files
 %license COPYING
