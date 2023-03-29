@@ -9,7 +9,7 @@ Source0: https://download.gnome.org/sources/libdex/0.2/%{name}-%{version}.tar.xz
 
 BuildRequires: pkgconfig(vapigen)
 BuildRequires: gi-docgen
-#BuildRequires: libatomic
+BuildRequires: atomic-devel
 BuildRequires: meson
 BuildRequires: pkgconfig(gio-2.0)
 BuildRequires: pkgconfig(gobject-introspection-1.0)
