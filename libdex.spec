@@ -60,6 +60,9 @@ libdex.
 %doc NEWS README.md
 %{_libdir}/libdex-1.so.1{,.*}
 %{_libdir}/girepository-1.0/
+%{_libexecdir}/libdex-1/dex-gdbus-codegen-extension.py
+%{python_sitelib}/gi/overrides/Dex.py
+%{python_sitelib}/gi/overrides/__pycache__/Dex.cpython-*.pyc
 
 %files devel
 %{_datadir}/gir-1.0/
