@@ -4,7 +4,7 @@
 
 Name:    libdex
 Version: 1.2.0
-Release: 2
+Release: 3
 Summary: a library supporting "Deferred Execution" for GNOME and GTK
 Group:   System/Libraries
 
@@ -21,9 +21,6 @@ BuildRequires: meson
 BuildRequires: pkgconfig(gio-2.0)
 BuildRequires: pkgconfig(gobject-introspection-1.0)
 BuildRequires: pkgconfig(liburing)
-# The split capture library satisfies this. lib64sysprof-devel pulls this
-# package back in, which still required Python 3.14.
-BuildRequires: sysprof-capture
 BuildRequires: pkgconfig(sysprof-capture-4)
 
 %description
